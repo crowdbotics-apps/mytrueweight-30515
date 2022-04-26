@@ -10,22 +10,22 @@ class Weight(models.Model):
         blank=True,
     )
     coffeeDrank = models.DecimalField(
-        max_digits=30,
-        decimal_places=2,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=2,
     )
     afterEgestion = models.DecimalField(
-        max_digits=30,
-        decimal_places=2,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=2,
     )
     mytrueweight = models.DecimalField(
-        max_digits=30,
-        decimal_places=2,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=2,
     )
 
 

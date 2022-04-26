@@ -7,19 +7,41 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Weight',
+            name="Weight",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('weightId', models.UUIDField()),
-                ('date', models.DateTimeField(blank=True, null=True)),
-                ('coffeeDrank', models.DecimalField(blank=True, decimal_places=2, max_digits=30, null=True)),
-                ('afterEgestion', models.DecimalField(blank=True, decimal_places=2, max_digits=30, null=True)),
-                ('mytrueweight', models.DecimalField(blank=True, decimal_places=2, max_digits=30, null=True)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("weightId", models.UUIDField()),
+                ("date", models.DateTimeField(blank=True, null=True)),
+                (
+                    "coffeeDrank",
+                    models.DecimalField(
+                        blank=True, decimal_places=2, max_digits=30, null=True
+                    ),
+                ),
+                (
+                    "afterEgestion",
+                    models.DecimalField(
+                        blank=True, decimal_places=2, max_digits=30, null=True
+                    ),
+                ),
+                (
+                    "mytrueweight",
+                    models.DecimalField(
+                        blank=True, decimal_places=2, max_digits=30, null=True
+                    ),
+                ),
             ],
         ),
     ]
